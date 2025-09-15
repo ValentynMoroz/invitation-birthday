@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+html,
+body {
+  overflow-x: hidden;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f8f6ee;
+  color: white;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@font-face {
+  font-family: "MarckScript";
+  src: url("/fonts/MarckScript-Regular.woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GreatVibes";
+  src: url("/fonts/GreatVibes-Regular.woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "KapakanaRegular";
+  src: url("/fonts/Kapakana-Regular.woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@theme {
+  --font-marckScript: "MarckScript", ui-sans-serif, system-ui, sans-serif;
+}
+
+@theme {
+  --font-greatVibes: "GreatVibes", ui-sans-serif, system-ui, sans-serif;
+}
+
+@theme {
+  --font-kapakanaRegular: "KapakanaRegular", ui-sans-serif, system-ui, sans-serif;
+}
+
+.date::after {
+  content: "";
+  display: inline-block; /* щоб він займав місце */
+  width: 100%;
+  height: 2px; /* лінія */
+  background: white;
+  /* transform: rotate(0deg); */
+  margin-left: 0px; /* відступ від тексту */
+  transform: translateY(-20px);
+}
+
+.date::before {
+  content: "";
+  display: inline-block; /* щоб він займав місце */
+  width: 100%;
+  height: 2px; /* лінія */
+  background: white;
+  /* transform: rotate(0deg); */
+  margin-left: 0px; /* відступ від тексту */
+  transform: translateY(8px);
+}
